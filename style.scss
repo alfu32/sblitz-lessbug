@@ -1,0 +1,19 @@
+%mbox{
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+}
+.one{
+  border: 1px solid #555;
+  @extend %mbox;
+
+  .two{
+    @extend %mbox;
+    border: 1px solid #fc0;
+  }
+  
+  .three{
+    @extend %mbox;
+    border: 1px solid #0fa;
+  }
+}
